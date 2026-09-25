@@ -1,6 +1,14 @@
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+print(name,age)
+print(age)
+
+
+
+
 def calculate(a,b=5):
     return a * b
-print(calculate(10))
+print(calculate(10,10))
 
 
 fruits = ["Apple", "Mango", "Banana"]
@@ -31,18 +39,22 @@ print(math.sqrt(25))
 from math import*
 print(sqrt(16))
 
-# 3
+3
 for i in range(3,16,3):
     print(i)
 
-for i in range(1,7):
+for i in range(1,6):
     print(3*i)
 
 
 # 4 
 def multiple_numbers(x,y):
     return x*y
-print("The product is ",multiple_numbers(2,3))
+
+a = int(input("Enter a number"))
+b = int(input("Enter a number"))
+print("The product is ",multiple_numbers(a,b))
+4
 
 #5 
 import math
@@ -110,10 +122,10 @@ while count <= 5:
 
 def interest(p, t, r=10):
     return (p * t * r) / 100
-interest(5000,4)
+print(interest(10,2))
 
-# or 
-interest(5000, 2, 12)
+# # or 
+print(interest(10, 2, 20))
 # It makes the function more flexible.
 
 
@@ -143,8 +155,8 @@ def add(a, b):
 print(add(2,3))
 # A programmer needs a non-void function when the result needs to be used later.
 
-# 35. Return multiple values
 
+# 35. Return multiple values
 # Python functions can return multiple values using a tuple.
 
 def calculate(a, b):
@@ -165,12 +177,10 @@ print(product)
 
 # For millions of rows, Pandas is generally preferred because it provides powerful and convenient data-processing operations.
 
+
 # 37. Draw a hexagon using Turtle
-
 # A hexagon has 6 sides.
-
 # Turning angle:
-
 # 360/6 = 60 degree
 import turtle
 for i in range(6):
@@ -256,7 +266,7 @@ r = float(input("Enter Rate: "))
 si = calculate_interest(p, t, r)
 print("Simple Interest =", si)
 
-# 23. Sum of first 10 even numbers
+# # 23. Sum of first 10 even numbers
 num = 2
 count = 1
 total = 0
@@ -268,28 +278,30 @@ while count <= 10:
 
 print("Sum =", total)
 
+# For loop 
+sum = 0
+for i in range(2, 21, 2):
+    sum = sum + i
+
+print("Sum of first 10 even numbers:", sum)
+
 # Output:
 
 Sum = 110
 
 # 24. Colored square using Turtle
 import turtle
-
 t = turtle.Turtle()
-
 t.color("blue")
+t.fillcolor("red")
 t.begin_fill()
-
 for i in range(4):
     t.forward(100)
     t.right(90)
-
 t.end_fill()
-
 turtle.exitonclick()
 
 # If you specifically need blue pen and red fill, use:
-
 t.pencolor("blue")
 t.fillcolor("red")
 
@@ -389,3 +401,5 @@ def sum_of_digits(num):
 num = int(input("Enter a number: "))
 
 print("Sum of digits =", sum_of_digits(num))
+
+
